@@ -32,7 +32,7 @@ namespace Expert.MilanJurjevic.Seminar.Controllers
 
         [HttpGet("prvibr/{prviB}/drugiB/{drugiB}")]
 
-       /* public ActionResult<string> Zbroji1(int prviB, int drugiB)
+       public ActionResult<string> Zbroji1(int prviB, int drugiB)
         {
             int prvi = prviB;
             int drugi = drugiB;
@@ -40,7 +40,7 @@ namespace Expert.MilanJurjevic.Seminar.Controllers
             string Zbroj = Convert.ToString(zbroj);
             return ("Rezutlat dva prosljeđena broja je " + Zbroj);
 
-        }*/
+        }
 
         [HttpGet("prvibr/{prviB}/drugibr/{drugiB}")]
         public ActionResult<int> Vrati1(int prviB, int drugiB)
@@ -86,7 +86,7 @@ namespace Expert.MilanJurjevic.Seminar.Controllers
         {
             List<string> zapetljanaLista = new List<string>();
             int rez;
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= prviBroj; i++)
             { string brojac = Convert.ToString(i);
                 rez = i * prviBroj;
                 string zbroj = Convert.ToString(rez);
